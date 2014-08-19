@@ -9,7 +9,7 @@ Live site: http://4.pushstateslash.appspot.com
 
 This is a website that displays chapters of alice in wonderland.
 
-It has only 1 RouteTokenPlace: /alice/{chapterNumber}
+It has a single RouteTokenPlace: /alice/{chapterNumber}
 
 So here's what happens when you visit /alice/3
 
