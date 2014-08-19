@@ -1,0 +1,14 @@
+package com.wallissoftware.alice.server.guice;
+
+import com.google.inject.servlet.ServletModule;
+import com.gwtplatform.dispatch.rpc.server.guice.DispatchServiceImpl;
+import com.gwtplatform.dispatch.rpc.shared.ActionImpl;
+import com.wallissoftware.alice.server.page.PageModule;
+
+public class DispatchServletModule extends ServletModule {
+    @Override
+    public void configureServlets() {
+        serve("/" + ActionImpl.DEFAULT_SERVICE_NAME + "*").with(DispatchServiceImpl.class);
+        install(new PageModule());
+    }
+}

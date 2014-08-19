@@ -1,0 +1,15 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+            <ui:style>
+            	.link {
+				margin: 10px 20px 10px 0px;
+				font-size: 2em;
+				display:inline;
+				}
+            </ui:style>
+    <g:HTMLPanel>
+    <g:HTML ui:field="chapterHtml"></g:HTML>
+    <g:Hyperlink ui:field="prevChapter" addStyleNames="{style.link}">Previous Chapter</g:Hyperlink>
+    <g:Hyperlink ui:field="nextChapter" addStyleNames="{style.link}">Next Chapter</g:Hyperlink>
+    </g:HTMLPanel>
+</ui:UiBinder>
