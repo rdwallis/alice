@@ -11,7 +11,7 @@ This is a website that displays chapters of alice in wonderland.
 
 It has a single RouteTokenPlace: /alice/{chapterNumber}
 
-So here's what happens when you visit /alice/3
+Here's what happens when you visit /alice/3
 
 ###### On the server:
 
@@ -38,8 +38,3 @@ So here's what happens when you visit /alice/3
 * Your page has content for non-javascript agents, so you've improved SEO and accessability.
 
 * Plus because the noScript content is very similar to the PREFETCH_DISPATCH content gzip will make the noScript content virtually costless.
-
-# The Disadvantage
-
-There are no disadvantages, this pattern is amazing.
-
